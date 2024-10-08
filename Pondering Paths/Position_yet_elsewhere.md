@@ -1,4 +1,4 @@
-#Position yet elsewhere
+# Position yet elsewhere
 The filesystem contains multiple dictionaries with each of them containing multiple files. Sometimes, 
 the program which we wanna invoke may not be present in the root directory, so it is needed to change the directory in order to execute the program from a specific path. So, for this, navigation around 
 directories can be done using the command `cd(change directory)` and then the argument passed is the path which we wanna move to. The challenge required us to execute a program `/challenge/run` from a 
