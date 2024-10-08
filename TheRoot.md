@@ -1,5 +1,4 @@
-# cryptonite_taskphase_Giridhar
-#The Root
+# The Root
 We are able to invoke a program by providing its path on the command line.A file system starts 
 at `/`. This contains other dictionaries, configuration files, programs and flags in it.
 In our challenge, we are asked to invoke one such program called `pwn`. Therefore, we are
