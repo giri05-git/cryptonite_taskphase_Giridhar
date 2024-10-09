@@ -1,5 +1,5 @@
 # Redirecting more output
-	In this challenge, we get the flag after running `/challenge/run` but only if we redirect
+In this challenge, we get the flag after running `/challenge/run` but only if we redirect
 its output to the file `myflag`. So after redirecting, our flag is sent to the myflag file.
 But when I ran the program, we see that it print to our terminal. Over the standard error, it prints 
 us all the instructions for the command. After that, to get the flag, I read the file `myfile` 
