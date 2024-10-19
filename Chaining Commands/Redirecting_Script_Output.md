@@ -1,5 +1,5 @@
 # Redirecting Script Output
-	In this challenge, I was asked to bring back piping. So, first I started by making the shell file using then `nano x.sh`. Then in that, I wrote
+In this challenge, I was asked to bring back piping. So, first I started by making the shell file using then `nano x.sh`. Then in that, I wrote
 				`#!/bin/bash
 				 /challenge/pwn
 				 /challenge/college`
