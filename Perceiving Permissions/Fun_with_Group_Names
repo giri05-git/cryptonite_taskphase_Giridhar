@@ -1,0 +1,14 @@
+# Fun with Groups Names
+Every user in Linux doesn't have their own group. Sometimes, the user might be part of a different group. This can be found using the `id` command.
+	In this challenge, I find the group name using *id* command, then I changed the group ownership of the */flag* file to that group. Then I flagged the file to get the value.
+
+```bash
+ Connected!
+hacker@permissions~fun-with-groups-names:~$ id
+uid=1000(hacker) gid=1000(grp19781) groups=1000(grp19781)
+hacker@permissions~fun-with-groups-names:~$ chgrp grp19781 /flag
+hacker@permissions~fun-with-groups-names:~$ cat /flag
+pwn.college{ICfhcSNX1WjQbarkA4YON1_MEH9.dJzNyUDL2kTN0czW}
+```
+## References Used:
+None
