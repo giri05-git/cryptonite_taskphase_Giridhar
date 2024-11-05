@@ -40,5 +40,5 @@ found out the hexadecimal as `0x4d`. No were we asked to remove the *0x* and pro
 ` Flag: picoCTF{0000004d}`
 
 ## References Used:
-https://www.youtube.com/watch?v=1d-6Hv1c39c&ab_channel=LowLevel
-https://youtu.be/BMvda3d0dt8?si=rb7NvCeByuSzmeoZ
+- https://www.youtube.com/watch?v=1d-6Hv1c39c&ab_channel=LowLevel
+- https://youtu.be/BMvda3d0dt8?si=rb7NvCeByuSzmeoZ
