@@ -35,7 +35,7 @@ ldr	w1, [sp, 28]
 ldr	w0, [sp, 12]
 sub	w0, w1, w0
 ```
-Storing *(sp+28) as 77 and loading it to w1 and similarly *(sp+12) i.e, x to wo. Then on subtracting, we basically has with us `wo=77-x`. So, in our question we were asked about the argument which will give us the value as 0. Since x is our parameter which attains the value of argument, therefore that argument is 77. So what we need to get is the hexadecimal form of 77. For that, I went to wsl terminal, used python3 to run the python interpreter, then
+Storing `*(sp+28)` as 77 and loading it to w1 and similarly `*(sp+12)` i.e, x to wo. Then on subtracting, we basically has with us `wo=77-x`. So, in our question we were asked about the argument which will give us the value as 0. Since x is our parameter which attains the value of argument, therefore that argument is 77. So what we need to get is the hexadecimal form of 77. For that, I went to wsl terminal, used python3 to run the python interpreter, then
 found out the hexadecimal as `0x4d`. No were we asked to remove the *0x* and provide the ans in 32 bit, therefore, that is 8 digits. So basically after adding zero, I got `0000004d` to give as unique value inside the flag. So I obtained by final flag like that.
 ` Flag: picoCTF{0000004d}`
 
