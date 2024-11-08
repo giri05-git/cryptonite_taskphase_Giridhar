@@ -42,7 +42,7 @@ found out the hexadecimal as `0x4d`. No were we asked to remove the *0x* and pro
 ## References Used:
 - https://www.youtube.com/watch?v=1d-6Hv1c39c&ab_channel=LowLevel
 - https://youtu.be/BMvda3d0dt8?si=rb7NvCeByuSzmeoZ
-<img width="1272" alt="cookie" src="https://github.com/user-attachments/assets/4fc7c407-76ba-4fe9-8812-dea6e3598b7f">
+
 
 
 
