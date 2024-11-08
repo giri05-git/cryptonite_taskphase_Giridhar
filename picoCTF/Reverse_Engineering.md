@@ -45,4 +45,55 @@ found out the hexadecimal as `0x4d`. No were we asked to remove the *0x* and pro
 
 
 
+# ARMssembly 0
+So, for this challenge, what I did basically was just go through the lines provided in the diassembled code and I was easily able to figure out what is happening in it.
+	So by going through the func1 function
+```
+sub     sp, sp, #16
+str     w0, [sp, 12]
+str     w1, [sp, 8]
+ldr     w1, [sp, 12]
+ldr     w0, [sp, 8]
+```
+So here first value provided as argument is stored in `*(sp+12)` and the second one in `*(sp+8)` but while loading this, if you observe, it is loaded opposite, i.e, wo is stored is the value in *(sp+8) and w1 with value in *(sp+12) respectively.
+	Now, after that if you observe the next few lines,
+```
+      cmp     w1, w0
+        bls     .L2
+        ldr     w0, [sp, 12]
+        b       .L3
+.L2:
+        ldr     w0, [sp, 8]
+.L3:
+        add     sp, sp, 16
+        ret
+        .size   func1, .-func1
+        .section        .rodata
+        .align  3
+```
+you can see that the program doing is basically comparing these two numbers. So, we are seeing if w1 is less than wo or not. If it is, then the function *.L2* is called and the higher value is getting loaded in wo and else, *.L3* function is called which loads the other value. So, from observing that, I understood that what were trying to do was to find the higher value among the two.
+	Now, while going through the *.LC0* and *main* function, there are two lines which basically confirms our assumption. Those are:
+```
+.string "Result: %ld\n"
+bl  printf
+```
+So, this printf showed that we are printing the larger value which we have stored and kept with the result string.
+	So, now I just looked at the question compared the two values to be given as argument and found out which was the larger value. Then, I converted the given integer to hexadecimal by doing the step shown below in terminal:
+```
+giridhar@LAPTOP-EQ112OJM:~$ python3
+Python 3.10.12 (main, Sep 11 2024, 15:47:36) [GCC 11.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> hex(4110761777)
+'0xf5053f31'
+```
+Now, in the final value to be provided inside the picoCTF{} brace, *0x* was asked to be removed, so I just gave the *f5053f31* part and got the flag.
+
+` Flag: picoCTF{f5053f31} `
+
+## References Used:
+- https://youtu.be/1d-6Hv1c39c?si=_f-vPqgOR6XhN_ZI
+
+
+
+
 
