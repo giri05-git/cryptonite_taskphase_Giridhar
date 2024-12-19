@@ -94,6 +94,22 @@ Now, in the final value to be provided inside the picoCTF{} brace, *0x* was aske
 - https://youtu.be/1d-6Hv1c39c?si=_f-vPqgOR6XhN_ZI
 
 
+  # GDB Baby Step 1 
+I had no idea how to proceed with this challenge because the file itself was not readable in VSC. So, I went through the videos provided by my mentor. Then, I found out I can use a disassembler to read this file, and I set up a suitable one *IDA Disassembler*. 
+	Since the file was readable now, now I went through the question. From reading the question, I found out I need to find the main function in the file and take the value associated with the eax registar in mov command in the function.
+
+<img width="471" alt="image" src="https://github.com/user-attachments/assets/620e3877-90af-4253-aa49-61405e094013" />
+
+
+So I took that value, but it could not be given directly cause it is in hexadecimal format. So, I converted it into decimal format and gave it as the flag.
+
+`FLAG:picoCTF{549698}`
+
+## References Used:
+- https://www.youtube.com/watch?v=1d-6Hv1c39c&ab_channel=LowLevel
+
+
+
 
 
 
