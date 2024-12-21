@@ -17,4 +17,18 @@ Next was to see if it was cropped image or not. This was done by readjusting the
 ## References Used:
 - https://en.wikipedia.org/wiki/BMP_file_format
 
+  # m00nwalk
+For this challenge, I received a wav file that had some random audio in it. By hearing it, I was doubtful there was some encoding done in it. So inorder to decode it, we needed to have some idea on the decoder, so for that, I went through the hints provided. In that, they gave a question *How did pictures from the moon landing get sent back to Earth?* On researching on that, I found it was through SSTV. SSTV is a picture transmission method used to transmit and receive picture using radio.
+So after learning it was SSTV, I just searched for few sstv decoders and I found an app called `Robot36`. I played the audio on the app and received an image which had the flag in it.
+
+![WhatsApp Image 2024-12-21 at 17 52 36_235fbd8e](https://github.com/user-attachments/assets/72010520-0995-465d-a99f-d39a3fc02ace)
+
+```THIS CHALLENGE INTRODUCED ME TO THE CONCEPT OF SSTV DECODING```
+
+`FLAG:picoCTF{beep_boop_im_in_space}`
+
+## References Used:
+- https://youtu.be/_6AlE4ZsjR4?si=XElu9zp3UnHvabot
+
+
 
