@@ -3,7 +3,14 @@ For this challenge, I didn't have any pre knowledge, so I went along with the ch
 <img width="1280" alt="bmp file format" src="https://github.com/user-attachments/assets/d2691581-1613-451b-92bc-88d3b29e2fd5" />
 Then the corrupt bytes was supposed to be that of file offset and file header, which has standard hex values 36 and 38 in bmp files. On entering these values, I got an image.
 
+
+![tunn3l_v1s10n2](https://github.com/user-attachments/assets/201943c7-df01-495a-b4a0-41c56e30db86)
+
 Next was to see if it was cropped image or not. This was done by readjusting the bitmap height which has the offset *16* and default value *01*. On adjusting the bytes, I realised what we received initially was a cropped verion of the actual image. So, I followed the last step again this time with a larger value i.e, *03*. On doing this, I was able to see the flag.
+
+![tunn3l_v1s10n3](https://github.com/user-attachments/assets/ee07a2ed-0684-4efc-88a0-9f3d43db8edf)
+
+
 
 `FLAG:picoCTF{qu1t3_a_v13w_2020}`
 
