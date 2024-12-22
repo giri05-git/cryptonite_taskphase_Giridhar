@@ -109,6 +109,32 @@ So I took that value, but it could not be given directly cause it is in hexadeci
 - https://www.youtube.com/watch?v=1d-6Hv1c39c&ab_channel=LowLevel
 
 
+# Vault door 3
+For this challenge, a java code was provided. On going through the first portion of the challenge, I realised it is a password verification challenge.
+
+<img width="1004" alt="vaultdoor3" src="https://github.com/user-attachments/assets/194deb50-ac9b-455d-a4bc-d6627578fb7c" />
+
+It is asking for a password input from the user and comparing it with actual password. If verified, user is granted access.
+
+Next, they provided how to make the password with some clues given. Since I don't know python language, I used gpt to convert this code to python.
+
+
+<img width="994" alt="vaultdoor3 password" src="https://github.com/user-attachments/assets/8f3f75ec-f5e1-4cae-9665-d272218406c1" />
+
+
+<img width="527" alt="vaultdoor3 passwordpython" src="https://github.com/user-attachments/assets/bc472f70-16f8-4db2-98f5-a788993ca6df" />
+
+Running this code enabled me to get the flag.
+
+`FLAG:picoCTF{jU5t_a_s1mpl3_an4gr4m_4_u_1fb380}`
+
+## References Used:
+None
+
+
+
+
+
 
 
 
